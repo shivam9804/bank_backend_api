@@ -23,7 +23,7 @@ EmployeeLogin.login = (loginCredentials, result) => {
 
 EmployeeLogin.getLoans = loanData => {
     sql.query(`SELECT customer.customer_full_name, service.service_name, service.size, service.tenure, service.details, 
-            service.required_documents, process_status.status, process_status.status_id from customer, service, process_status 
+            service.eligibility_criteria, process_status.status, process_status.status_id from customer, service, process_status 
             WHERE customer.customer_id = process_status.customer_id AND service.service_id = process_status.service_id AND 
             process_status.status <= 5`, (err, res) => {
         if (err) {

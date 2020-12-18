@@ -25,6 +25,18 @@ router.get('/products', (req, res) => {
     res.render('products');
 });
 
+router.get('/dreamhomeloan', (req, res) => {
+    res.render('dreamhomeloan');
+});
+
+router.get('/businessloan', (req, res) => {
+    res.render('businessloan');
+});
+
+router.get('/microhousingloan', (req, res) => {
+    res.render('microhousingloan');
+});
+
 router.get('/user_dashboard', (req,res) =>{
     userId = req.session.userId;
     data = req.session.data;

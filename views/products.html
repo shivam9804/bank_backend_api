@@ -79,17 +79,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<nav class="link-effect-2" id="link-effect-2">
 				<ul class="nav navbar-nav">
 					<!-- <li class="active"><a href="index.html"><span data-hover="Home">Home</span></a></li> -->
-					<!-- <li><a href="/products"><span data-hover="Products & Services">Products & Services</span></a></li> -->
+					<li><a href="/products"><span data-hover="Products & Services">Products & Services</span></a></li>
 					<!-- <li><a href="/locations"><span data-hover="Locations">Locations</span></a></li> -->
+					
 					{{#if userId}}
 					<li><a href="/apply_now"><span data-hover="Apply Now">Apply Now</span></a></li>
 					{{/if}}
 					<li><a href="/about"><span data-hover="About Us">About Us</span></a></li>
+					
 					{{#if userId}}
 					<li><a href="/user_dashboard"><span data-hover="User Dashboard">User Dashboard</span></a></li>
 					{{else}}
 					<li class="active"><a href="/login"><span data-hover="Login">Login</span></a></li>
 					{{/if}}
+					
+					{{#if notuserId}}
+					<li class="active"><a href="/signup"><span data-hover="Sign Up">Sign Up</span></a></li>
+					{{/if}}
+					
 				</ul>
 			</nav>
 		</div>
@@ -118,7 +125,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3_agileits_services_grid1">
 							<div class="w3_agileits_services_grid1l">
                                 <!-- <img src="images/6.png" alt=" " class="img-responsive"> -->
-                                <h4><a href="#" data-toggle="modal" data-target="#myModal">Dream Home Loan</a></h4>
+                                <h4><a href="/dreamhomeloan" data-toggle="modal" data-target="#myModal">Dream Home Loan</a></h4>
 							</div>
 							<div class="w3_agileits_services_grid1r">
 								<ul>
@@ -133,7 +140,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="clearfix"> </div>
 						</div>
                         <p>For the construction of your house or purchase of a new house/ flat and for renovations of an existing property.</p>
-                        <h4 style="margin-bottom: 1em; left: 25%; text-decoration: underline;"><a href="#">View</a></h4>
+                        <h4 style="margin-bottom: 1em; left: 25%; text-decoration: underline;"><a href="/dreamhomeloan">View</a></h4>
 					</div>
                 </div>
                 <div class="col-md-4 w3_agile_services_grid" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
@@ -148,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3_agileits_services_grid1">
 							<div class="w3_agileits_services_grid1l">
                                 <!-- <img src="images/6.png" alt=" " class="img-responsive"> -->
-                                <h4><a href="#" data-toggle="modal" data-target="#myModal">Business Loan</a></h4>
+                                <h4><a href="/businessloan" data-toggle="modal" data-target="#myModal">Business Loan</a></h4>
 							</div>
 							<div class="w3_agileits_services_grid1r">
 								<ul>
@@ -163,7 +170,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="clearfix"> </div>
 						</div>
                         <p>Can be availed for purchase of assets, business expansion, Working Capital requirements etc.</p>
-                        <h4 style="margin-bottom: 1em; left: 25%; text-decoration: underline;"><a href="#">View</a></h4>
+                        <h4 style="margin-bottom: 1em; left: 25%; text-decoration: underline;"><a href="/businessloan">View</a></h4>
 					</div>
                 </div>
                 <div class="col-md-4 w3_agile_services_grid" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
@@ -178,7 +185,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3_agileits_services_grid1">
 							<div class="w3_agileits_services_grid1l">
                                 <!-- <img src="images/6.png" alt=" " class="img-responsive"> -->
-                                <h4><a href="#" data-toggle="modal" data-target="#myModal">Micro-housing Loan</a></h4>
+                                <h4><a href="/microhousingloan" data-toggle="modal" data-target="#myModal">Micro-housing Loan</a></h4>
 							</div>
 							<div class="w3_agileits_services_grid1r">
 								<ul>
@@ -193,7 +200,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="clearfix"> </div>
 						</div>
                         <p>For purchase of constructed house/flat, new house construction, renovation, etc.</p>
-                        <h4 style="margin-bottom: 1em; left: 25%; text-decoration: underline;"><a href="#">View</a></h4>
+                        <h4 style="margin-bottom: 1em; left: 25%; text-decoration: underline;"><a href="/microhousingloan">View</a></h4>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
